@@ -1,0 +1,8 @@
+This postgres performance farm runs exactly the same as the build farm. The tests were inspired by Greg Smith's
+pgbench tools.
+
+NOTE: If you do not have a build-farm account, always keep make-perf set to an active variable
+NOTE: WHENVER YOU RUN A PERFORMANCE TEST, RUN WITH --test, so not to spam the buildfarm server
+NOTE: At this point, the farm only supports Postgres 9.0 due to the use of workers in PGBench,
+later verisons should make it backwards compatable. So therefore, always run this with the default
+branch (HEAD)
